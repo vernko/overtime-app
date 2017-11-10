@@ -29,5 +29,9 @@ describe 'navigate' do
 
             expect(page).to have_content("Some rationale")
         end
+
+        def set_post
+            @post = Post.find(params[:id])
+        end
     end
 end
