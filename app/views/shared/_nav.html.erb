@@ -6,7 +6,7 @@
   <li class="<%= active?(root_path) %>">
     <%= link_to "Home", root_path %>
   </li>
-  <liclass="<%= active?(posts_path) %>">
+  <li class="<%= active?(posts_path) %>">
     <%= link_to "Time Entries", posts_path %>
   </li>
   <li class="dropdown pull-right">
@@ -18,7 +18,7 @@
       <li class="divider">
       </li>
       <li>
-        <%= link_to "Logout", destroy_user_registration_path, method: :delete %>
+        <%= link_to "Logout", destroy_user_session_path, method: :delete %>
       </li>
     </ul>
   </li>
