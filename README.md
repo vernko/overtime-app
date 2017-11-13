@@ -16,3 +16,6 @@ XAdminUser -> STI
 
 ##UI:
 - Bootstrap -> formatting
+
+## Refractor TODOS:
+- Refactor user association integration test in post_spec
