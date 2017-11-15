@@ -1,15 +1,21 @@
-FactoryBot.define do
+FactoryGirl.define do
+  sequence :email do |n|
+      "test#{n}@example.com"
+  end
+  
   factory :user do
     first_name 'Jon'
     last_name 'Snow'
-    email 'test@test.com'
+    email { generate :email }
     password 'Test1234!'
     password_confirmation 'Test1234!'
   end
 
-  factory :second_post, class: "Post" do
-    date Date.yesterday
-    rationale "Some more content"
-    user
+  factory :admin_user, class: "AdminUser" do
+    first_name 'Admin'
+    last_name 'User'
+    email { generate :email }
+    password 'Test1234!'
+    password_confirmation 'Test1234!'
   end
 end
