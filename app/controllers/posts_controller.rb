@@ -15,7 +15,7 @@ class PostsController < ApplicationController
         if @post.save
             redirect_to @post, notice: 'Your entry was created successfully'
         else
-            render.new
+            render :new
         end
     end
 
