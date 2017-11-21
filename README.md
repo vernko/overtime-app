@@ -23,3 +23,4 @@
 ## Refractor TODOS:
 - Refactor user association integration test in post_spec
 - Refactor posts/_form for admin users with status
+- Fix features/post_spec.rb :97
