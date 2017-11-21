@@ -2,7 +2,7 @@
 
 	<% if @post.errors.any? %>
 		<% @post.errors.full_messages.each do |error| %>
-			<%= js add_gritter(flash[:error], title: "Overtime App Notification", sticy: false) %>
+			<%= js add_gritter(error, title: "Overtime App Notification", sticy: false) %>
 		<% end %>
 	<% end %>
 	
@@ -15,7 +15,18 @@
   		<%= f.label :rationale, class: "col-sm-2 control-label" %>
 		<%= f.text_area :rationale, class: "form-control" %>
 	</div>
+
+	<div class="form-group">
+		<%= f.label :status, 'Submitted' %>
+		<%= f.radio_button :status, 'submitted' %>
+		
+		<%= f.label :status, 'Approved' %>
+		<%= f.radio_button :status, 'approved' %>
+
+		<%= f.label :status, 'Rejected' %>
+		<%= f.radio_button :status, 'rejected' %>
+	</div>
   
-  <%= f.submit 'Save', class: "btn btn-primary" %>
+  	<%= f.submit 'Save', class: "btn btn-primary" %>
 
 <% end %>
