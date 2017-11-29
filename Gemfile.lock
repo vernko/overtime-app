@@ -277,7 +277,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   database_cleaner (~> 1.6, >= 1.6.2)
   devise (~> 4.3)
-  dotenv-rails (~> 2.2, >= 2.2.1)
+  dotenv-rails
   factory_girl_rails (~> 4.9)
   font-awesome-rails (~> 4.7, >= 4.7.0.2)
   gritter (~> 1.2)
