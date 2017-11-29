@@ -6,7 +6,8 @@ class AuditLog < ApplicationRecord
   after_initialize :set_defaults
 
   private
+  
     def set_defaults
-      start_date ||= Date.today - 6.days
+      self.start_date ||= Date.today - 6.days
     end
 end
