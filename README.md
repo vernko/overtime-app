@@ -14,15 +14,6 @@
 - x Administrate admin dashboard
 - x Block non admin and guest users
 - Email summary to managers for approval
-- Needs to be documented if employee did not log overtime
-
-##UI:
-- x Bootstrap -> formatting
-- X Icons from glyphicons
-- x Updates the styles for forms
 
 ## TODOS:
-- Integrate validations for phone attr in User:
-    # No spaces or dashes
-    # All characters have to be a number
-    # Exactly 10 characters
+
