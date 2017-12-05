@@ -18,5 +18,7 @@ Rails.application.configure do
   config.assets.quiet = true
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
   config.eager_load = false
+  config.action_mailer.perform_deliveries
+  config.action_mailer.raise_delivery_errors
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 end
