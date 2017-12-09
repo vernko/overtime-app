@@ -11,12 +11,11 @@ Rails.application.configure do
   config.action_mailer.perform_caching = false
   config.active_support.deprecation = :notify
   config.log_formatter = ::Logger::Formatter.new
-
-  if ENV["RAILS_LOG_TO_STDOUT"].present?
-    logger           = ActiveSupport::Logger.new(STDOUT)
-    logger.formatter = config.log_formatter
-    config.logger    = ActiveSupport::TaggedLogging.new(logger)
-  end
+  # if ENV["RAILS_LOG_TO_STDOUT"].present?
+  #   logger           = ActiveSupport::Logger.new(STDOUT)
+  #   logger.formatter = config.log_formatter
+  #   config.logger    = ActiveSupport::TaggedLogging.new(logger)
+  # end
   config.active_record.dump_schema_after_migration = false
   config.serve_static_assets = true
   config.action_mailer.default_url_options = { :host => 'vff-overtime.herokuapp.com' }
